@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Ada-X</string>
+	<key>CFBundleExecutable</key>
+	<string>Ada-X</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.enesskucukk.adax</string>
+	<key>CFBundleName</key>
+	<string>Ada-X</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Çalan şarkıyı (Müzik, Spotify) ve okunmamış mailleri çentikte göstermek için bu uygulamalara soru sorar. Hiçbir şeyi değiştirmez, iletilerin içeriğini okumaz.</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>Bugün ve yarınki etkinliklerini çentik panelinde göstermek için. Takvimin sadece okunur.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Bugün ve yarınki etkinliklerini çentik panelinde göstermek için. Takvimin sadece okunur.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Ayna sekmesinde kendini görmen için. Görüntü kaydedilmez, panel kapanınca kamera kapanır.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>Masaüstündeki son ekran görüntülerini listelemek için. Başka dosyalara bakılmaz.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSRemindersFullAccessUsageDescription</key>
+	<string>Yapılacaklarını panelde göstermek, tamamlandı olarak işaretlemek ve yeni hatırlatıcı eklemek için.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Yapılacaklarını panelde göstermek, tamamlandı olarak işaretlemek ve yeni hatırlatıcı eklemek için.</string>
+</dict>
+</plist>
