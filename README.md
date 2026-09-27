@@ -1,86 +1,90 @@
 # Ada-X ✦
 
-MacBook'un çentiğinden açılan şık bir panel: müzik kontrolü, hava, döviz, takvim, namaz vakitleri,
-zamanlayıcı ve daha fazlası. Neleri kullanacağını ilk açılışta sen seçersin, gerisi gizlenir.
+**English** · [Türkçe](README.tr.md)
 
-## Kurulum (Mac)
+A sleek panel that drops down from your MacBook's notch: music controls, weather, currency rates, calendar,
+prayer times, a timer and more. You pick what you use on first launch; everything else stays hidden.
 
-Terminal'e yapıştır:
+> The app's interface is in Turkish.
+
+## Install (Mac)
+
+Paste this into Terminal:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/EnessKucukk/ada-x/main/install.sh | bash
 ```
 
-İlk açılışta kurulum ekranı çıkar:
-1. **Neleri kullanacaksın?** Kullanacağın özellikleri seç.
-2. **İzinler:** Sadece seçtiklerinin gerektirdiği izinler, her birinin neden istendiği yazılı.
+On first launch a setup screen appears:
+1. **What will you use?** Pick the features you want.
+2. **Permissions:** Only the permissions your chosen features need, each with a short note on why it's needed.
 
-Kişisel verilerin hiçbir yere gönderilmez.
+Your personal data is never sent anywhere.
 
-## Kullanım
+## Usage
 
 | | |
 |---|---|
-| Paneli aç / kapat | **⌘ Command'a 2 kez bas**, çentiğe fareyle gel ya da menü çubuğundaki ♪ |
-| Oynat / Duraklat | **⌥ Option'a 2 kez bas** |
-| Ses aç / kıs | **⌃⌥ ↑ / ↓** ya da çentiğin üstünde kaydır |
-| Parlaklık | **⇧ Shift** basılıyken çentiğin üstünde kaydır |
-| Sonraki / önceki şarkı | **⌃⌥ → / ←** |
-| Sesi kapat | **⌃⌥ M** |
+| Open / close the panel | **Double-press ⌘ Command**, hover over the notch, or click ♪ in the menu bar |
+| Play / pause | **Double-press ⌥ Option** |
+| Volume up / down | **⌃⌥ ↑ / ↓**, or scroll over the notch |
+| Brightness | Hold **⇧ Shift** and scroll over the notch |
+| Next / previous track | **⌃⌥ → / ←** |
+| Mute | **⌃⌥ M** |
 
-Bütün tuşlar **Ayarlar → Kısayollar**'dan değiştirilebilir.
-Özellik seçimi: **Ayarlar → Genel → Kullandığım özellikler**.
+All shortcuts can be changed in **Ayarlar → Kısayollar** (Settings → Shortcuts).
+To change which features are shown: **Ayarlar → Genel → Kullandığım özellikler**.
 
-## Özellikler
+## Features
 
-- **Müzik:** Spotify / Apple Müzik'te çalan şarkı, kapak, ilerleme; çentiğin yanında canlı gösterge
-- **Bilgi:** Hava, döviz ve altın, maç skorları, takvim, hatırlatıcılar, namaz vakitleri, deprem (AFAD), haberler, dünya saatleri, mail
-- **Araçlar:** Dosya rafı, pano geçmişi, hızlı not, hesap makinesi ve kur çevirici, zamanlayıcı, ekran görüntüleri, ayna, sistem durumu
-- **Çentik bildirimleri:** ses, parlaklık, şarj, AirPods bağlanınca pil durumu, büyük deprem uyarısı
-- **Uyutma engeli:** tek tıkla Mac uyanık kalır
+- **Music:** now playing from Spotify / Apple Music with artwork and progress; a live indicator next to the notch
+- **Info:** weather, currency and gold, football scores, calendar, reminders, prayer times, earthquakes (AFAD), news, world clocks, mail
+- **Tools:** file shelf, clipboard history, quick note, calculator and currency converter, timer, screenshots, mirror, system stats
+- **Notch notifications:** volume, brightness, charging, AirPods battery when connected, major earthquake alerts
+- **Keep awake:** one click keeps your Mac from sleeping
 
-## Veriler nereden geliyor?
+## Where does the data come from?
 
-Uygulamanın kendi sunucusu yok, kullanım istatistiği toplamaz, hesap istemez.
-İnternetten gelen bilgiler herkese açık, ücretsiz kaynaklardan **doğrudan senin Mac'inden** çekilir.
-Sadece seçtiğin özelliklerin kaynağına bağlanılır.
+The app has no server of its own, collects no usage statistics and needs no account.
+Online information comes from free, public sources and is fetched **directly from your Mac**.
+Only the sources for features you've enabled are contacted.
 
-**İnternetten gelenler**
+**From the internet**
 
-| Özellik | Kaynak | Oraya ne gider? |
+| Feature | Source | What is sent |
 |---|---|---|
-| Hava | [Open-Meteo](https://open-meteo.com) | Yazdığın şehir adı ve onun koordinatları |
-| Namaz vakitleri | [Aladhan](https://aladhan.com) (Diyanet hesaplama yöntemi) | Şehrin koordinatları |
-| Döviz (dolar, euro, sterlin) | [ExchangeRate-API](https://www.exchangerate-api.com) açık kuru | Hiçbir şey, sadece istek |
-| Gram altın, bitcoin | [CoinGecko](https://www.coingecko.com) | Hiçbir şey. Gram altın, ons fiyatından (PAX Gold) hesaplanır, yaklaşıktır |
-| Maç skorları | ESPN'in açık skor verisi (resmî bir servis değildir) | Seçtiğin lig |
-| Deprem | [AFAD](https://deprem.afad.gov.tr) | Son 48 saatin tarih aralığı |
-| Haberler | BBC Türkçe, NTV, TRT Haber, Anadolu Ajansı RSS | Hiçbir şey, sadece istek |
+| Weather | [Open-Meteo](https://open-meteo.com) | The city name you type and its coordinates |
+| Prayer times | [Aladhan](https://aladhan.com) (Diyanet calculation method) | The city's coordinates |
+| Currency (USD, EUR, GBP) | [ExchangeRate-API](https://www.exchangerate-api.com) open rates | Nothing, just the request |
+| Gold (per gram), bitcoin | [CoinGecko](https://www.coingecko.com) | Nothing. Gram gold is derived from the ounce price (PAX Gold) and is approximate |
+| Football scores | ESPN's public score data (not an official service) | The league you pick |
+| Earthquakes | [AFAD](https://deprem.afad.gov.tr) | The date range for the last 48 hours |
+| News | BBC Türkçe, NTV, TRT Haber, Anadolu Ajansı RSS | Nothing, just the request |
 
-**Mac'in içinden gelenler (internete hiç gitmez)**
+**From your Mac (never leaves it)**
 
-| Özellik | Nereden okunur? |
+| Feature | Read from |
 |---|---|
-| Çalan şarkı | Spotify / Müzik uygulaması |
-| Takvim, hatırlatıcılar | Mac'teki Takvim ve Anımsatıcılar |
-| Mail | Mac'teki Mail uygulaması (sadece gönderen ve konu, içerik okunmaz) |
-| Sistem, pil, AirPods | macOS |
-| Ekran görüntüleri | Masaüstü (sadece ekran görüntüsü dosyaları) |
-| Ayna | Kamera (görüntü kaydedilmez) |
+| Now playing | Spotify / Music app |
+| Calendar, reminders | Calendar and Reminders on your Mac |
+| Mail | The Mail app (sender and subject only, message content is never read) |
+| System, battery, AirPods | macOS |
+| Screenshots | Desktop (screenshot files only) |
+| Mirror | Camera (nothing is recorded) |
 
-**Mac'te saklananlar**
-Ayarların, hızlı notun ve raftaki dosya listesi sadece bu Mac'te saklanır.
-Pano geçmişi hiç kaydedilmez, sadece uygulama açıkken bellekte durur. Şifre yöneticilerinin kopyaları alınmaz.
+**Stored on your Mac**
+Your settings, quick note and file shelf list are stored only on this Mac.
+Clipboard history is never saved; it lives in memory only while the app is running. Copies from password managers are skipped.
 
-## Kaldırma
+## Uninstall
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/EnessKucukk/ada-x/main/install.sh | bash -s -- kaldir
 ```
 
-## Kaynaktan derleme
+## Build from source
 
-Xcode Komut Satırı Araçları gerekir (`xcode-select --install`).
+Requires the Xcode Command Line Tools (`xcode-select --install`).
 
 ```bash
 ./build.sh
@@ -89,5 +93,5 @@ open build/Ada-X.app
 
 ## Windows
 
-[`windows`](windows) klasöründe daha basit bir sürüm var (sadece medya kısayolları ve ayar penceresi).
-İki dosyayı aynı klasöre koy, **BASLAT.bat**'a çift tıkla. Kurulum gerekmez.
+The [`windows`](windows) folder contains a simpler version (media shortcuts and a settings window only).
+Put both files in the same folder and double-click **BASLAT.bat**. Nothing to install.
