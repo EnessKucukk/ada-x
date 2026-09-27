@@ -90,8 +90,3 @@ Requires the Xcode Command Line Tools (`xcode-select --install`).
 ./build.sh
 open build/Ada-X.app
 ```
-
-## Windows
-
-The [`windows`](windows) folder contains a simpler version (media shortcuts and a settings window only).
-Put both files in the same folder and double-click **BASLAT.bat**. Nothing to install.

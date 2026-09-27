@@ -88,8 +88,3 @@ Xcode Komut Satırı Araçları gerekir (`xcode-select --install`).
 ./build.sh
 open build/Ada-X.app
 ```
-
-## Windows
-
-[`windows`](windows) klasöründe daha basit bir sürüm var (sadece medya kısayolları ve ayar penceresi).
-İki dosyayı aynı klasöre koy, **BASLAT.bat**'a çift tıkla. Kurulum gerekmez.
